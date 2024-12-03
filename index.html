@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oscars Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oscars Voting</h1>
+        <form id="votingForm">
+            <!-- Best Picture Category -->
+            <div class="category">
+                <label for="bestPicture">Best Picture</label>
+                <select id="bestPicture" name="bestPicture">
+                    <option value="Movie 1">Movie 1</option>
+                    <option value="Movie 2">Movie 2</option>
+                    <option value="Movie 3">Movie 3</option>
+                </select>
+            </div>
+
+            <!-- Best Actor Category -->
+            <div class="category">
+                <label for="bestActor">Best Actor</label>
+                <select id="bestActor" name="bestActor">
+                    <option value="Actor 1">Actor 1</option>
+                    <option value="Actor 2">Actor 2</option>
+                    <option value="Actor 3">Actor 3</option>
+                </select>
+            </div>
+
+            <!-- Best Director Category -->
+            <div class="category">
+                <label for="bestDirector">Best Director</label>
+                <select id="bestDirector" name="bestDirector">
+                    <option value="Director 1">Director 1</option>
+                    <option value="Director 2">Director 2</option>
+                    <option value="Director 3">Director 3</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Votes</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <p>Thank you for voting!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
